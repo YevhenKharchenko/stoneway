@@ -1,4 +1,13 @@
+.contact-section-wrapper {
+  padding-bottom: 70px;
+
+  @include media(desktop) {
+  }
+}
+
 .contact-section {
+  background: rgba(69, 85, 108, 0.5);
+
   @include media(desktop) {
   }
 }
@@ -11,8 +20,8 @@
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 0;
+    padding-bottom: 0;
     max-width: 1440px;
   }
 }
@@ -22,7 +31,36 @@
   }
 }
 
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contact-text-wrapper {
+  @include media(desktop) {
+    max-width: 654px;
+  }
+}
+
 .contact-title {
+  @include media(desktop) {
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 40px;
+
   @include media(desktop) {
   }
 }
@@ -31,15 +69,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Holtwood One SC', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-size: 32px;
+  color: #59e169;
   max-width: max-content;
+  word-break: break-all;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.contact-img {
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
+    min-width: 340px;
+    margin: 0;
   }
 }

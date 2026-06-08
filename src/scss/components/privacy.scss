@@ -1,25 +1,9 @@
-.privacy-body {
-  .header {
-    background: #7988a7;
-  }
-
-  .header-bg-wrapper {
-    background-image: none;
-  }
-
-  @include media(desktop) {
-    .nav {
-      border: 1px solid #e5e7eb;
-    }
-
-    .nav-list-link {
-      color: #e5e7eb;
-    }
-  }
-}
-
 .policy-section {
-  background: #7988a7;
+  background: linear-gradient(
+    180deg,
+    rgba(69, 85, 108, 0.9) 0%,
+    rgba(255, 214, 168, 0.9) 100%
+  );
   padding-top: 126px;
   padding-bottom: 80px;
 
@@ -30,24 +14,24 @@
 }
 
 .policy-main-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Holtwood One SC', sans-serif;
   font-weight: 400;
-  font-size: 38px;
-  line-height: 1.5;
-  text-align: center;
-  color: #f97316;
+  font-size: 40px;
+  line-height: 1.45;
+  color: #59e169;
   margin-bottom: 24px;
 
   @include media(desktop) {
+    font-size: 48px;
   }
 }
 
 .policy-title {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -55,11 +39,11 @@
 }
 
 .policy-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -75,11 +59,11 @@
 }
 
 .policy-item {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
   margin-bottom: 8px;
 
   &:last-child {
@@ -96,4 +80,5 @@
 
 .policy-link {
   font-weight: 700;
+  word-break: break-all;
 }

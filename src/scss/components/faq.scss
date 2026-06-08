@@ -1,8 +1,10 @@
 .faq-section {
   padding-top: 80px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -24,44 +26,45 @@
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 
   @include media(desktop) {
   }
 }
 
 .faq-list-item {
-  border-bottom: 1px solid #22c55e;
-  padding: 10px 0 8px 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 335px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 630px;
   }
 }
 
 .faq-top-text-btn {
+  background: rgba(89, 225, 105, 0.3);
+  padding: 31px 10px;
   display: flex;
   align-items: center;
+  gap: 24px;
   width: 100%;
 
   @include media(desktop) {
+    padding: 24px 41px;
   }
 }
 
 .faq-btn-text {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Holtwood One SC', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
-  color: #22c55e;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
   text-align: left;
 
   @include media(desktop) {
@@ -72,8 +75,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 36px;
-  height: 36px;
+  min-width: 44px;
+  height: 44px;
   margin-left: auto;
   transition: transform 0.3s ease-in-out;
 
@@ -89,24 +92,22 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e5e7eb;
-  max-width: 257px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    max-width: 545px;
   }
 }
 
 .is-visible {
-  margin-top: 10px;
+  margin-top: 28px;
   max-height: 500px;
   opacity: 1;
 
@@ -121,5 +122,10 @@
 .faq-list-item.faq-open {
 }
 
-.faq-list-item.faq-open .faq-btn-text {
+.faq-list-item.faq-open .faq-bottom-text {
+  padding: 0 10px;
+
+  @include media(desktop) {
+    padding: 0 50px;
+  }
 }
