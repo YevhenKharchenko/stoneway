@@ -1,0 +1,97 @@
+.mechanics-section {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.mechanics-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
+
+.mechanics-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 128px;
+  }
+}
+
+.mechanics-title {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+    min-width: 522px;
+  }
+}
+
+.mechanics-list {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    padding: 0;
+    width: 100%;
+    max-width: 414px;
+  }
+}
+
+.mechanics-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.circle-icon {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.mechanics-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e5e7eb;
+
+  @include media(desktop) {
+  }
+}

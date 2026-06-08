@@ -1,0 +1,53 @@
+.gameplay-section {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.gameplay-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-content-wrapper {
+  @include media(desktop) {
+    position: relative;
+  }
+}
+
+.gameplay-title {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img1 {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img2 {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+  }
+}
