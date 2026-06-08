@@ -1,38 +1,17 @@
 .header {
-  background: #7988a7;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: rgba(255, 214, 168, 0.5);
+  padding: 4px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    background: none;
+    padding: 20px 0;
   }
-}
-
-.header-context {
-  background: transparent;
-}
-
-.header-bg-wrapper {
-  padding: 6px 0;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
-
-  @include media(desktop) {
-    padding: 16px 0;
-    max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
-  }
-}
-
-.header-bg-wrapper-context {
-  background-image: none;
 }
 
 .header-container {
@@ -46,9 +25,6 @@
   justify-content: end;
 
   @include media(desktop) {
-    border: 1px solid #f97316;
-    border-radius: 20px;
-    padding: 11px 15px;
     justify-content: start;
   }
 }
@@ -59,17 +35,18 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 32px;
     width: 100%;
   }
 }
 
 .nav-list-link {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #f97316;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: -0.01em;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,9 +72,11 @@
 }
 
 .menu-icon {
+  fill: #fff;
 }
 
 .close-icon {
+  fill: #fff;
 }
 
 .close-btn {

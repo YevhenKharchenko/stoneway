@@ -15,9 +15,6 @@ function onMenuButtonClick() {
   contextMenu.classList.add('is-open');
   menuBtn.classList.add('closed');
   closeContextBtn.classList.add('is-open');
-  headerWrapper.classList.add('header-bg-wrapper-context');
-  header.classList.add('header-context');
-  header.style.background = 'transparent';
 
   contextMenu.addEventListener('click', onContextMenuLinkClick);
   closeContextBtn.addEventListener('click', onCloseContextButtonClick);
@@ -29,9 +26,6 @@ function onCloseContextButtonClick() {
   contextMenu.classList.remove('is-open');
   closeContextBtn.classList.remove('is-open');
   menuBtn.classList.remove('closed');
-  headerWrapper.classList.remove('header-bg-wrapper-context');
-  header.classList.remove('header-context');
-  header.style.background = '#7988a7';
 
   contextMenu.removeEventListener('click', onContextMenuLinkClick);
   closeContextBtn.removeEventListener('click', onCloseContextButtonClick);

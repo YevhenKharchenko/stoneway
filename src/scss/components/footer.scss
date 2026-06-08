@@ -1,11 +1,11 @@
 .footer {
-  background: #f97316;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  background: rgba(69, 85, 108, 0.5);
+  padding-top: 78px;
+  padding-bottom: 78px;
 
   @include media(desktop) {
-    padding-top: 46px;
-    padding-bottom: 46px;
+    padding-top: 68px;
+    padding-bottom: 68px;
   }
 }
 
@@ -15,33 +15,33 @@
 }
 
 .footer-nav {
-  margin-bottom: 18px;
+  margin-bottom: 50px;
 
   @include media(desktop) {
-    margin-bottom: 50px;
   }
 }
 
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 64px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
   }
 }
 
 .footer-link {
   display: flex;
   align-items: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Holtwood One SC', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-size: 24px;
+  line-height: 0.83333;
+  text-transform: uppercase;
+  color: #45556c;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -53,13 +53,15 @@
 }
 
 .footer-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
 
   @include media(desktop) {
-    text-align: center;
+    text-align: right;
   }
 }
